@@ -15,6 +15,8 @@
 
 # ===Download videos from a batch of URLs===
 # youtube-dl.exe -c -i -R 3 -o %(title)s.%(ext)s -a E:\Video\Youtube-DL\batch.txt
+# ===Download videos from a batch file, sort into folders based on playlist and uploader===
+# youtube-dl.exe -c -i -R 3 -o "E:\Video\%(uploader)s\%(playlist)s\%(playlist_index)s-%(title)s.%(ext)s" -a E:\Video\list.txt
 
 # ===Download videos from a batch of URLs and convert to OGG===
 # youtube-dl.exe -c -i -R 3 -o %(title)s.%(ext)s -x --audio-format vorbis -a E:\Video\Youtube-DL\batch.txt
