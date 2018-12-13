@@ -24,6 +24,9 @@
 # Download a slice of a large playlist. Only the 480p versions, title them with the upload date followed by the index number
 # youtube-dl -i --playlist-start 3120 --playlist-end 3120 -f "[height <=? 480]" https://www.youtube.com/playlist?list=PL[PLAYLIST ID] -o "/home/anthony/Videos/%(upload_date)s-%(playlist_index)s-%(title)s.%(ext)s"
 
+# Same as before, but convert to audio and keep the videos. Pull from batch and add videos to archive file
+# youtube-dl.exe -o "E:\Video\%(uploader)s\%(playlist)s\%(upload_date)s-%(playlist_index)s-%(title)s.%(ext)s" -i -f "[height <=? 480]" --download-archive E:\Video\Youtube-DL\YTDLarchive.txt -x --audio-format best --keep-video -a E:\Video\Youtube-DL\batch2.txt
+
 # ===Batch from vk.com (requires username and password)===
 # youtube-dl.exe -c -i -R 3 -o %(title)s.%(ext)s -a E:\Video\Youtube-DL\batch.txt --username +[PHONE_NUMBER] --password [PASSWORD]
 
