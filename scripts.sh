@@ -32,6 +32,8 @@
 
 # ===Get Video IDs From Playlist (for keeping track of downloaded vids)===
 # youtube-dl.exe --get-id https://www.youtube.com/playlist?list=PL[PLAYLIST ID] -i
+# ===Get Resulting Filenames From Playlist===
+# youtube-dl.exe -o "%(upload_date)s - %(title)s" --get-filename https://www.youtube.com/playlist?list=PL[PLAYLIST ID] -i
 
 # ===Extract audio from video===
 # ffmpeg -i "E:\Video\[VIDEO].mp4" -vn -acodec copy [AUDIO].aac
