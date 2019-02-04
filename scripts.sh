@@ -46,6 +46,9 @@
 #    Delay Audio
 # ffmpeg.exe -i "x.avi" -itsoffset 1 -i "x.avi" -map 0:v -map 1:a -vcodec copy -acodec copy "audio1.avi"
 
+# === Download Subtitles, but Not Video (SRT Not Guaranteed) ===
+# youtube-dl.exe [YOUTUBE VIDEO] --write-auto-sub --sub-format srt --skip-download
+
 # ===MESS WITH STUFF HERE===
 # youtube-dl.exe -c -i -R 3 -o E:\Misc\Vids\new\%(title)s.%(ext)s -a E:\Misc\Vids\links.txt
 # youtube-dl.exe -c -i -R 3 -o "E:\Archive\HDD-Backup\2014\%(title)s.%(ext)s" -x --audio-format vorbis -a "E:\Archive\HDD-Backup\2014\[VIDEO].txt"
